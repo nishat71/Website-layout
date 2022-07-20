@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Flexbox</title>
+    <style>
+        .container{
+            height:300px;
+            border:3px dotted orange;
+            display:flex;
+            flex-wrap: wrap;
+
+          /* justify-content: flex-end; */
+          /* justify-content: flex-start; */
+          /* justify-content: center; */
+          /* justify-content: space-between; */
+          /* justify-content: space-evenly; */
+          /* justify-content: space-around; */
+          
+          /* align-items: flex-end; */
+          /* align-items: flex-start; */
+          /* align-items: center; */
+          align-items: stretch;
+          flex-direction: row-reverse;
+          /* flex-direction: column-reverse; */
+        }
+
+        /* Horizontal er Jnno justify-content
+        Vertical er Jnno align-items */
+
+
+        .box{
+            font-weight:700;
+            border: 3px dashed purple;
+            width:100px;
+            /* height:100px; */
+        }
+        #box-2{
+            flex-grow:1;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.box{Box-$}*3 -->
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div id="box-2" class="box">Box-2</div>
+        
+    </div>
+    
+</body>
+</html>
